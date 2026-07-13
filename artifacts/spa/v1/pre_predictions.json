@@ -1,0 +1,1075 @@
+{
+  "stage": "pre-qualifying",
+  "generatedAt": "2026-07-13T12:54:53.464129+00:00",
+  "dataCutoff": "2026-07-05",
+  "modelVersion": "spa-lgbm-2026.07.13-v1",
+  "simulationCount": 50000,
+  "simulationSeed": 20260719,
+  "predictedPodium": [
+    {
+      "position": 1,
+      "driverId": 847,
+      "driverCode": "RUS",
+      "driverName": "George Russell",
+      "team": "Mercedes",
+      "probability": 0.2215
+    },
+    {
+      "position": 2,
+      "driverId": 1,
+      "driverCode": "HAM",
+      "driverName": "Lewis Hamilton",
+      "team": "Ferrari",
+      "probability": 0.16038
+    },
+    {
+      "position": 3,
+      "driverId": 844,
+      "driverCode": "LEC",
+      "driverName": "Charles Leclerc",
+      "team": "Ferrari",
+      "probability": 0.14366
+    }
+  ],
+  "field": [
+    {
+      "driverId": 863,
+      "driverCode": "ANT",
+      "driverName": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.21558,
+        "p2": 0.15442,
+        "p3": 0.14308
+      },
+      "winnerProbability": 0.21558,
+      "podiumProbability": 0.51308,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.187
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "supporting",
+          "impact": 0.8929
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4317
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "inhibiting",
+          "impact": -0.2092
+        },
+        {
+          "feature": "driver_circuit_podium_rate",
+          "label": "Riwayat podium di Spa",
+          "direction": "inhibiting",
+          "impact": -0.0899
+        }
+      ]
+    },
+    {
+      "driverId": 847,
+      "driverCode": "RUS",
+      "driverName": "George Russell",
+      "team": "Mercedes",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.2215,
+        "p2": 0.12704,
+        "p3": 0.12532
+      },
+      "winnerProbability": 0.2215,
+      "podiumProbability": 0.47386,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.1912
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "supporting",
+          "impact": 0.7423
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4236
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "inhibiting",
+          "impact": -0.2103
+        },
+        {
+          "feature": "driver_win_rate_10",
+          "label": "Momentum kemenangan",
+          "direction": "inhibiting",
+          "impact": -0.0639
+        }
+      ]
+    },
+    {
+      "driverId": 844,
+      "driverCode": "LEC",
+      "driverName": "Charles Leclerc",
+      "team": "Ferrari",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.15328,
+        "p2": 0.15016,
+        "p3": 0.14366
+      },
+      "winnerProbability": 0.15328,
+      "podiumProbability": 0.4471,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.5344
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4675
+        },
+        {
+          "feature": "driver_points_avg_5",
+          "label": "Poin rata-rata 5 race",
+          "direction": "supporting",
+          "impact": 0.4564
+        },
+        {
+          "feature": "driver_win_rate_10",
+          "label": "Momentum kemenangan",
+          "direction": "inhibiting",
+          "impact": -0.0443
+        },
+        {
+          "feature": "team_dnf_rate_10",
+          "label": "Risiko reliabilitas tim",
+          "direction": "inhibiting",
+          "impact": -0.0392
+        }
+      ]
+    },
+    {
+      "driverId": 1,
+      "driverCode": "HAM",
+      "driverName": "Lewis Hamilton",
+      "team": "Ferrari",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.1321,
+        "p2": 0.16038,
+        "p3": 0.15092
+      },
+      "winnerProbability": 0.1321,
+      "podiumProbability": 0.4434,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.4915
+        },
+        {
+          "feature": "driver_points_avg_5",
+          "label": "Poin rata-rata 5 race",
+          "direction": "supporting",
+          "impact": 0.7667
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "supporting",
+          "impact": 0.5853
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "inhibiting",
+          "impact": -0.1623
+        },
+        {
+          "feature": "driver_circuit_races",
+          "label": "Pengalaman di Spa",
+          "direction": "inhibiting",
+          "impact": -0.0606
+        }
+      ]
+    },
+    {
+      "driverId": 846,
+      "driverCode": "NOR",
+      "driverName": "Lando Norris",
+      "team": "McLaren",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.08434,
+        "p2": 0.11712,
+        "p3": 0.12068
+      },
+      "winnerProbability": 0.08434,
+      "podiumProbability": 0.32214,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.4191
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "supporting",
+          "impact": 0.9365
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4959
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "inhibiting",
+          "impact": -0.3417
+        },
+        {
+          "feature": "team_win_rate_10",
+          "label": "Momentum kemenangan tim",
+          "direction": "inhibiting",
+          "impact": -0.1386
+        }
+      ]
+    },
+    {
+      "driverId": 830,
+      "driverCode": "VER",
+      "driverName": "Max Verstappen",
+      "team": "Red Bull",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.0225,
+        "p2": 0.11172,
+        "p3": 0.11602
+      },
+      "winnerProbability": 0.0225,
+      "podiumProbability": 0.25024,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.281
+        },
+        {
+          "feature": "driver_points_avg_5",
+          "label": "Poin rata-rata 5 race",
+          "direction": "supporting",
+          "impact": 0.5978
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.5285
+        },
+        {
+          "feature": "driver_circuit_races",
+          "label": "Pengalaman di Spa",
+          "direction": "inhibiting",
+          "impact": -0.3797
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "inhibiting",
+          "impact": -0.1879
+        }
+      ]
+    },
+    {
+      "driverId": 857,
+      "driverCode": "PIA",
+      "driverName": "Oscar Piastri",
+      "team": "McLaren",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.05176,
+        "p2": 0.07486,
+        "p3": 0.08102
+      },
+      "winnerProbability": 0.05176,
+      "podiumProbability": 0.20764,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.4653
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.5012
+        },
+        {
+          "feature": "driver_podium_rate_10",
+          "label": "Konsistensi podium",
+          "direction": "supporting",
+          "impact": 0.248
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "inhibiting",
+          "impact": -0.7794
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "inhibiting",
+          "impact": -0.139
+        }
+      ]
+    },
+    {
+      "driverId": 865,
+      "driverCode": "HAD",
+      "driverName": "Isack Hadjar",
+      "team": "Red Bull",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.05172,
+        "p2": 0.03878,
+        "p3": 0.04196
+      },
+      "winnerProbability": 0.05172,
+      "podiumProbability": 0.13246,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 1.1261
+        },
+        {
+          "feature": "driver_points_avg_5",
+          "label": "Poin rata-rata 5 race",
+          "direction": "supporting",
+          "impact": 0.7833
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.6061
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "inhibiting",
+          "impact": -1.3903
+        },
+        {
+          "feature": "driver_podium_rate_10",
+          "label": "Konsistensi podium",
+          "direction": "inhibiting",
+          "impact": -0.3114
+        }
+      ]
+    },
+    {
+      "driverId": 842,
+      "driverCode": "GAS",
+      "driverName": "Pierre Gasly",
+      "team": "Alpine F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00844,
+        "p2": 0.01694,
+        "p3": 0.01982
+      },
+      "winnerProbability": 0.00844,
+      "podiumProbability": 0.0452,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 0.3816
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.3447
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.1174
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "inhibiting",
+          "impact": -0.5942
+        },
+        {
+          "feature": "team_circuit_podium_rate",
+          "label": "Riwayat podium tim di Spa",
+          "direction": "inhibiting",
+          "impact": -0.236
+        }
+      ]
+    },
+    {
+      "driverId": 866,
+      "driverCode": "LIN",
+      "driverName": "Arvid Lindblad",
+      "team": "RB F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00312,
+        "p2": 0.01712,
+        "p3": 0.02102
+      },
+      "winnerProbability": 0.00312,
+      "podiumProbability": 0.04126,
+      "factors": [
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4857
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 0.3713
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "supporting",
+          "impact": 0.1915
+        },
+        {
+          "feature": "driver_points_avg_5",
+          "label": "Poin rata-rata 5 race",
+          "direction": "inhibiting",
+          "impact": -0.4203
+        },
+        {
+          "feature": "prev_constructor_pos",
+          "label": "Posisi klasemen konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.2338
+        }
+      ]
+    },
+    {
+      "driverId": 859,
+      "driverCode": "LAW",
+      "driverName": "Liam Lawson",
+      "team": "RB F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00462,
+        "p2": 0.0133,
+        "p3": 0.01484
+      },
+      "winnerProbability": 0.00462,
+      "podiumProbability": 0.03276,
+      "factors": [
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.3866
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 0.3775
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.0989
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "inhibiting",
+          "impact": -0.6017
+        },
+        {
+          "feature": "prev_constructor_pos",
+          "label": "Posisi klasemen konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.2642
+        }
+      ]
+    },
+    {
+      "driverId": 807,
+      "driverCode": "HUL",
+      "driverName": "Nico Hülkenberg",
+      "team": "Audi",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.02432,
+        "p2": 0.0007,
+        "p3": 0.00088
+      },
+      "winnerProbability": 0.02432,
+      "podiumProbability": 0.0259,
+      "factors": [
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "supporting",
+          "impact": 0.4643
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0954
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.0177
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.6972
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.9532
+        }
+      ]
+    },
+    {
+      "driverId": 861,
+      "driverCode": "COL",
+      "driverName": "Franco Colapinto",
+      "team": "Alpine F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00404,
+        "p2": 0.00394,
+        "p3": 0.0054
+      },
+      "winnerProbability": 0.00404,
+      "podiumProbability": 0.01338,
+      "factors": [
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "supporting",
+          "impact": 0.3639
+        },
+        {
+          "feature": "driver_finish_avg_5",
+          "label": "Rata-rata finis 5 race",
+          "direction": "supporting",
+          "impact": 0.1886
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.1885
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "inhibiting",
+          "impact": -1.3407
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "inhibiting",
+          "impact": -0.631
+        }
+      ]
+    },
+    {
+      "driverId": 860,
+      "driverCode": "BEA",
+      "driverName": "Oliver Bearman",
+      "team": "Haas F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00442,
+        "p2": 0.00342,
+        "p3": 0.00462
+      },
+      "winnerProbability": 0.00442,
+      "podiumProbability": 0.01246,
+      "factors": [
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.4873
+        },
+        {
+          "feature": "season_progress",
+          "label": "season_progress",
+          "direction": "supporting",
+          "impact": 0.0772
+        },
+        {
+          "feature": "prev_standing_pos",
+          "label": "Posisi klasemen pembalap",
+          "direction": "supporting",
+          "impact": 0.0617
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.6717
+        },
+        {
+          "feature": "driver_finish_avg_5",
+          "label": "Rata-rata finis 5 race",
+          "direction": "inhibiting",
+          "impact": -0.3938
+        }
+      ]
+    },
+    {
+      "driverId": 839,
+      "driverCode": "OCO",
+      "driverName": "Esteban Ocon",
+      "team": "Haas F1 Team",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00328,
+        "p2": 0.00418,
+        "p3": 0.00398
+      },
+      "winnerProbability": 0.00328,
+      "podiumProbability": 0.01144,
+      "factors": [
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "supporting",
+          "impact": 0.6232
+        },
+        {
+          "feature": "season_progress",
+          "label": "season_progress",
+          "direction": "supporting",
+          "impact": 0.1047
+        },
+        {
+          "feature": "driver_finish_avg_5",
+          "label": "Rata-rata finis 5 race",
+          "direction": "supporting",
+          "impact": 0.0974
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.6095
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "inhibiting",
+          "impact": -0.419
+        }
+      ]
+    },
+    {
+      "driverId": 864,
+      "driverCode": "BOR",
+      "driverName": "Gabriel Bortoleto",
+      "team": "Audi",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00296,
+        "p2": 0.00136,
+        "p3": 0.00188
+      },
+      "winnerProbability": 0.00296,
+      "podiumProbability": 0.0062,
+      "factors": [
+        {
+          "feature": "driver_finish_avg_5",
+          "label": "Rata-rata finis 5 race",
+          "direction": "supporting",
+          "impact": 0.2536
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0346
+        },
+        {
+          "feature": "season_progress",
+          "label": "season_progress",
+          "direction": "supporting",
+          "impact": 0.0247
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.5142
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -1.0536
+        }
+      ]
+    },
+    {
+      "driverId": 822,
+      "driverCode": "BOT",
+      "driverName": "Valtteri Bottas",
+      "team": "Cadillac",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00288,
+        "p2": 0.00078,
+        "p3": 0.0009
+      },
+      "winnerProbability": 0.00288,
+      "podiumProbability": 0.00456,
+      "factors": [
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "supporting",
+          "impact": 0.1339
+        },
+        {
+          "feature": "team_dnf_rate_10",
+          "label": "Risiko reliabilitas tim",
+          "direction": "supporting",
+          "impact": 0.0805
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.0192
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.5727
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.9704
+        }
+      ]
+    },
+    {
+      "driverId": 832,
+      "driverCode": "SAI",
+      "driverName": "Carlos Sainz",
+      "team": "Williams",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00184,
+        "p2": 0.00098,
+        "p3": 0.00092
+      },
+      "winnerProbability": 0.00184,
+      "podiumProbability": 0.00374,
+      "factors": [
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.0881
+        },
+        {
+          "feature": "team_circuit_podium_rate",
+          "label": "Riwayat podium tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0258
+        },
+        {
+          "feature": "field_size",
+          "label": "field_size",
+          "direction": "supporting",
+          "impact": 0.0035
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.6188
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.7984
+        }
+      ]
+    },
+    {
+      "driverId": 815,
+      "driverCode": "PER",
+      "driverName": "Sergio Pérez",
+      "team": "Cadillac",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00196,
+        "p2": 0.00086,
+        "p3": 0.00078
+      },
+      "winnerProbability": 0.00196,
+      "podiumProbability": 0.0036,
+      "factors": [
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0891
+        },
+        {
+          "feature": "team_dnf_rate_10",
+          "label": "Risiko reliabilitas tim",
+          "direction": "supporting",
+          "impact": 0.0809
+        },
+        {
+          "feature": "driver_circuit_races",
+          "label": "Pengalaman di Spa",
+          "direction": "supporting",
+          "impact": 0.0265
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.521
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.9694
+        }
+      ]
+    },
+    {
+      "driverId": 840,
+      "driverCode": "STR",
+      "driverName": "Lance Stroll",
+      "team": "Aston Martin",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00192,
+        "p2": 0.00058,
+        "p3": 0.001
+      },
+      "winnerProbability": 0.00192,
+      "podiumProbability": 0.0035,
+      "factors": [
+        {
+          "feature": "team_dnf_rate_10",
+          "label": "Risiko reliabilitas tim",
+          "direction": "supporting",
+          "impact": 0.0183
+        },
+        {
+          "feature": "team_circuit_races",
+          "label": "Pengalaman tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0143
+        },
+        {
+          "feature": "driver_circuit_avg_finish",
+          "label": "Riwayat finis di Spa",
+          "direction": "supporting",
+          "impact": 0.0126
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.5476
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.9416
+        }
+      ]
+    },
+    {
+      "driverId": 848,
+      "driverCode": "ALB",
+      "driverName": "Alexander Albon",
+      "team": "Williams",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00204,
+        "p2": 0.00062,
+        "p3": 0.00074
+      },
+      "winnerProbability": 0.00204,
+      "podiumProbability": 0.0034,
+      "factors": [
+        {
+          "feature": "driver_circuit_races",
+          "label": "Pengalaman di Spa",
+          "direction": "supporting",
+          "impact": 0.0815
+        },
+        {
+          "feature": "driver_grid_gain_avg_5",
+          "label": "Kemampuan naik posisi",
+          "direction": "supporting",
+          "impact": 0.0713
+        },
+        {
+          "feature": "team_circuit_podium_rate",
+          "label": "Riwayat podium tim di Spa",
+          "direction": "supporting",
+          "impact": 0.0105
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.6555
+        },
+        {
+          "feature": "driver_finish_avg_5",
+          "label": "Rata-rata finis 5 race",
+          "direction": "inhibiting",
+          "impact": -0.8886
+        }
+      ]
+    },
+    {
+      "driverId": 4,
+      "driverCode": "ALO",
+      "driverName": "Fernando Alonso",
+      "team": "Aston Martin",
+      "qualifyingPosition": null,
+      "gridPosition": null,
+      "positionProbabilities": {
+        "p1": 0.00138,
+        "p2": 0.00074,
+        "p3": 0.00056
+      },
+      "winnerProbability": 0.00138,
+      "podiumProbability": 0.00268,
+      "factors": [
+        {
+          "feature": "driver_circuit_races",
+          "label": "Pengalaman di Spa",
+          "direction": "supporting",
+          "impact": 0.0229
+        },
+        {
+          "feature": "team_dnf_rate_10",
+          "label": "Risiko reliabilitas tim",
+          "direction": "supporting",
+          "impact": 0.0181
+        },
+        {
+          "feature": "field_size",
+          "label": "field_size",
+          "direction": "supporting",
+          "impact": 0.0064
+        },
+        {
+          "feature": "team_points_avg_5",
+          "label": "Performa tim terkini",
+          "direction": "inhibiting",
+          "impact": -1.5142
+        },
+        {
+          "feature": "prev_constructor_points",
+          "label": "Poin konstruktor",
+          "direction": "inhibiting",
+          "impact": -0.9296
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Cuaca ditampilkan sebagai konteks dan belum menjadi fitur model v1.",
+    "Model dilatih dengan walk-forward OOF dan Platt scaling untuk kalibrasi."
+  ],
+  "disclaimer": "Probabilitas adalah estimasi analitis, bukan kepastian atau saran taruhan."
+}

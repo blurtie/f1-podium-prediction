@@ -1,0 +1,52 @@
+{
+  "modelVersion": "spa-lgbm-2026.07.13-v1",
+  "window": "walk-forward 2019-2025",
+  "preQualifying": {
+    "model": {
+      "raceCount": 152,
+      "podiumHitRate": 0.5702,
+      "winnerAccuracy": 0.5,
+      "exactTopThree": 0.1447,
+      "ndcgAt3": 0.6026,
+      "podiumBrier": 0.0845,
+      "podiumLogLoss": 0.26823,
+      "winnerBrier": 0.03625,
+      "winnerLogLoss": 0.12612
+    },
+    "standingsTopThree": {
+      "raceCount": 152,
+      "podiumHitRate": 0.5965,
+      "winnerAccuracy": 0.4671,
+      "exactTopThree": 0.1316,
+      "ndcgAt3": 0.5996,
+      "podiumBrier": 0.10211,
+      "podiumLogLoss": 0.37451,
+      "winnerBrier": 0.04207,
+      "winnerLogLoss": 0.18751
+    }
+  },
+  "postQualifying": {
+    "model": {
+      "raceCount": 152,
+      "podiumHitRate": 0.6754,
+      "winnerAccuracy": 0.5395,
+      "exactTopThree": 0.2763,
+      "ndcgAt3": 0.7099,
+      "podiumBrier": 0.06951,
+      "podiumLogLoss": 0.2256,
+      "winnerBrier": 0.0317,
+      "winnerLogLoss": 0.10802
+    },
+    "qualifyingTopThree": {
+      "raceCount": 152,
+      "podiumHitRate": 0.6754,
+      "winnerAccuracy": 0.5461,
+      "exactTopThree": 0.25,
+      "ndcgAt3": 0.6683,
+      "podiumBrier": 0.08315,
+      "podiumLogLoss": 0.31042,
+      "winnerBrier": 0.03642,
+      "winnerLogLoss": 0.16287
+    }
+  }
+}

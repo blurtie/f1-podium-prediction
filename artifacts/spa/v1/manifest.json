@@ -1,0 +1,20 @@
+{
+  "modelVersion": "spa-lgbm-2026.07.13-v1",
+  "dataCutoff": "2026-07-05",
+  "fixtureRaceId": 1178,
+  "fieldSize": 22,
+  "models": [
+    "post_podium",
+    "post_winner",
+    "pre_podium",
+    "pre_winner"
+  ],
+  "calibrationWindow": "2019-2025 walk-forward OOF",
+  "simulationCount": 50000,
+  "simulationSeed": 20260719,
+  "leakageGuards": [
+    "race result columns are shifted before rolling features",
+    "constructor features are aggregated once per team and race before shift",
+    "finish_gap_to_teammate_avg is excluded"
+  ]
+}

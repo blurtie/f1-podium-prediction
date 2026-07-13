@@ -1,0 +1,820 @@
+{
+  "window": "modern",
+  "basis": "qualifying",
+  "include2021": false,
+  "yearRange": {
+    "from": 2014,
+    "to": 2025
+  },
+  "raceSampleSize": 11,
+  "driverObservationCount": 223,
+  "poleToWinner": {
+    "successes": 7,
+    "sampleSize": 11,
+    "rate": 0.6363636363636364,
+    "confidenceInterval": {
+      "low": 0.35379677689163724,
+      "high": 0.8483377638586862
+    },
+    "smallSample": false
+  },
+  "poleToPodium": {
+    "successes": 10,
+    "sampleSize": 11,
+    "rate": 0.9090909090909091,
+    "confidenceInterval": {
+      "low": 0.6226353745137962,
+      "high": 0.9837682477371741
+    },
+    "smallSample": false
+  },
+  "topThreeQualifyingToRaceTopThree": {
+    "successes": 23,
+    "sampleSize": 33,
+    "rate": 0.696969696969697,
+    "confidenceInterval": {
+      "low": 0.5266154602526555,
+      "high": 0.8262465218545277
+    },
+    "smallSample": false
+  },
+  "spearmanCorrelation": 0.6464,
+  "averagePositionsGained": -0.067,
+  "dnfRate": {
+    "successes": 38,
+    "sampleSize": 223,
+    "rate": 0.17040358744394618,
+    "confidenceInterval": {
+      "low": 0.12673887299932646,
+      "high": 0.22523184136699786
+    },
+    "smallSample": false
+  },
+  "positionRates": [
+    {
+      "position": 1,
+      "winner": {
+        "successes": 7,
+        "sampleSize": 11,
+        "rate": 0.6363636363636364,
+        "confidenceInterval": {
+          "low": 0.35379677689163724,
+          "high": 0.8483377638586862
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 10,
+        "sampleSize": 11,
+        "rate": 0.9090909090909091,
+        "confidenceInterval": {
+          "low": 0.6226353745137962,
+          "high": 0.9837682477371741
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 2,
+      "winner": {
+        "successes": 2,
+        "sampleSize": 11,
+        "rate": 0.18181818181818182,
+        "confidenceInterval": {
+          "low": 0.05136660067100063,
+          "high": 0.4769861375782448
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 8,
+        "sampleSize": 11,
+        "rate": 0.7272727272727273,
+        "confidenceInterval": {
+          "low": 0.4343497069897537,
+          "high": 0.9025411942607853
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 3,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 5,
+        "sampleSize": 11,
+        "rate": 0.45454545454545453,
+        "confidenceInterval": {
+          "low": 0.21270957543988045,
+          "high": 0.7199122443100118
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 4,
+      "winner": {
+        "successes": 1,
+        "sampleSize": 11,
+        "rate": 0.09090909090909091,
+        "confidenceInterval": {
+          "low": 0.016231752262826,
+          "high": 0.37736462548620375
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 3,
+        "sampleSize": 11,
+        "rate": 0.2727272727272727,
+        "confidenceInterval": {
+          "low": 0.09745880573921467,
+          "high": 0.5656502930102463
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 5,
+      "winner": {
+        "successes": 1,
+        "sampleSize": 11,
+        "rate": 0.09090909090909091,
+        "confidenceInterval": {
+          "low": 0.016231752262826,
+          "high": 0.37736462548620375
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 2,
+        "sampleSize": 11,
+        "rate": 0.18181818181818182,
+        "confidenceInterval": {
+          "low": 0.05136660067100063,
+          "high": 0.4769861375782448
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 6,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 3,
+        "sampleSize": 11,
+        "rate": 0.2727272727272727,
+        "confidenceInterval": {
+          "low": 0.09745880573921467,
+          "high": 0.5656502930102463
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 7,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 1,
+        "sampleSize": 11,
+        "rate": 0.09090909090909091,
+        "confidenceInterval": {
+          "low": 0.016231752262826,
+          "high": 0.37736462548620375
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 8,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 9,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 10,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 11,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 12,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 13,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 14,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 15,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 16,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 17,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 18,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 19,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    },
+    {
+      "position": 20,
+      "winner": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      },
+      "podium": {
+        "successes": 0,
+        "sampleSize": 11,
+        "rate": 0.0,
+        "confidenceInterval": {
+          "low": 2.7755575615628914e-17,
+          "high": 0.2588400172488141
+        },
+        "smallSample": false
+      }
+    }
+  ],
+  "teams": [
+    {
+      "name": "Mercedes",
+      "starts": 22,
+      "podiums": 12,
+      "wins": 5,
+      "averageFinish": 5.64,
+      "dnfRate": 0.1364,
+      "smallSample": false
+    },
+    {
+      "name": "Red Bull",
+      "starts": 22,
+      "podiums": 9,
+      "wins": 3,
+      "averageFinish": 6.82,
+      "dnfRate": 0.1818,
+      "smallSample": false
+    },
+    {
+      "name": "Ferrari",
+      "starts": 22,
+      "podiums": 7,
+      "wins": 2,
+      "averageFinish": 6.86,
+      "dnfRate": 0.1364,
+      "smallSample": false
+    },
+    {
+      "name": "McLaren",
+      "starts": 22,
+      "podiums": 3,
+      "wins": 1,
+      "averageFinish": 11.82,
+      "dnfRate": 0.3182,
+      "smallSample": false
+    },
+    {
+      "name": "Williams",
+      "starts": 22,
+      "podiums": 1,
+      "wins": 0,
+      "averageFinish": 12.36,
+      "dnfRate": 0.0909,
+      "smallSample": false
+    },
+    {
+      "name": "Lotus F1",
+      "starts": 4,
+      "podiums": 1,
+      "wins": 0,
+      "averageFinish": 15.75,
+      "dnfRate": 0.75,
+      "smallSample": true
+    },
+    {
+      "name": "Racing Point",
+      "starts": 4,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 8.75,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "Force India",
+      "starts": 10,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 8.9,
+      "dnfRate": 0.2,
+      "smallSample": false
+    },
+    {
+      "name": "Alpine F1 Team",
+      "starts": 8,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 10.25,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Aston Martin",
+      "starts": 8,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 10.38,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "AlphaTauri",
+      "starts": 6,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.17,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Renault",
+      "starts": 10,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.4,
+      "dnfRate": 0.2,
+      "smallSample": false
+    }
+  ],
+  "activeDrivers": [
+    {
+      "name": "Lewis Hamilton",
+      "starts": 11,
+      "podiums": 7,
+      "wins": 4,
+      "averageFinish": 5.55,
+      "dnfRate": 0.1818,
+      "smallSample": false
+    },
+    {
+      "name": "Charles Leclerc",
+      "starts": 7,
+      "podiums": 4,
+      "wins": 1,
+      "averageFinish": 6.86,
+      "dnfRate": 0.1429,
+      "smallSample": false
+    },
+    {
+      "name": "Max Verstappen",
+      "starts": 10,
+      "podiums": 4,
+      "wins": 2,
+      "averageFinish": 7.4,
+      "dnfRate": 0.2,
+      "smallSample": false
+    },
+    {
+      "name": "Valtteri Bottas",
+      "starts": 10,
+      "podiums": 3,
+      "wins": 0,
+      "averageFinish": 8.0,
+      "dnfRate": 0.2,
+      "smallSample": false
+    },
+    {
+      "name": "Sergio Pérez",
+      "starts": 10,
+      "podiums": 2,
+      "wins": 0,
+      "averageFinish": 6.7,
+      "dnfRate": 0.1,
+      "smallSample": false
+    },
+    {
+      "name": "Oscar Piastri",
+      "starts": 3,
+      "podiums": 2,
+      "wins": 1,
+      "averageFinish": 7.67,
+      "dnfRate": 0.3333,
+      "smallSample": true
+    },
+    {
+      "name": "Lando Norris",
+      "starts": 6,
+      "podiums": 1,
+      "wins": 0,
+      "averageFinish": 7.33,
+      "dnfRate": 0.1667,
+      "smallSample": false
+    },
+    {
+      "name": "Carlos Sainz",
+      "starts": 10,
+      "podiums": 1,
+      "wins": 0,
+      "averageFinish": 14.3,
+      "dnfRate": 0.5,
+      "smallSample": false
+    },
+    {
+      "name": "Liam Lawson",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 8.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "Alexander Albon",
+      "starts": 6,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 8.83,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Gabriel Bortoleto",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 9.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "Esteban Ocon",
+      "starts": 8,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 9.38,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Pierre Gasly",
+      "starts": 7,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 9.86,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Fernando Alonso",
+      "starts": 9,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.0,
+      "dnfRate": 0.2222,
+      "smallSample": false
+    },
+    {
+      "name": "Lance Stroll",
+      "starts": 8,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.0,
+      "dnfRate": 0.0,
+      "smallSample": false
+    },
+    {
+      "name": "Oliver Bearman",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "George Russell",
+      "starts": 6,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 11.5,
+      "dnfRate": 0.3333,
+      "smallSample": false
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "starts": 9,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 12.89,
+      "dnfRate": 0.2222,
+      "smallSample": false
+    },
+    {
+      "name": "Andrea Kimi Antonelli",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 16.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "Franco Colapinto",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 19.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    },
+    {
+      "name": "Isack Hadjar",
+      "starts": 1,
+      "podiums": 0,
+      "wins": 0,
+      "averageFinish": 20.0,
+      "dnfRate": 0.0,
+      "smallSample": true
+    }
+  ],
+  "warnings": [
+    "Statistik dengan kurang dari lima observasi ditandai sebagai sampel kecil.",
+    "Korelasi bersifat deskriptif dan tidak membuktikan hubungan sebab-akibat."
+  ]
+}
