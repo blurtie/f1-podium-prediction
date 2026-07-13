@@ -58,7 +58,10 @@ a { color: inherit; text-decoration: none; }
 .track-marker .marker-code { fill: var(--timing-amber); font-size: 11px; }
 .track-label { position: absolute; color: var(--paper); font: 500 .62rem "IBM Plex Mono", monospace; letter-spacing: .07em; }
 .track-label span { color: var(--telemetry-blue); }
-.eau-rouge { left: 15%; bottom: 23%; }.kemmel { top: 17%; right: 13%; }
+.eau-rouge { left: 11%; bottom: 34%; }
+.kemmel { top: 10%; left: 52%; }
+.la-source { left: 6%; bottom: 18%; }
+.pouhon { top: 49%; left: 54%; }
 .track-telemetry { position: absolute; right: 24px; bottom: 22px; display: grid; text-align: right; color: var(--muted); font: .6rem "IBM Plex Mono", monospace; }
 .track-telemetry strong { color: var(--white); font: 600 2.6rem/1 "Barlow Condensed", sans-serif; }
 .podium-list { list-style: none; margin: 0; padding: 0; display: grid; background: #151c24; }
