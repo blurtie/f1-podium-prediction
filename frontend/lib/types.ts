@@ -76,6 +76,16 @@ export type Rate = {
   smallSample: boolean;
 };
 
+export type EntityPerformance = {
+  name: string;
+  starts: number;
+  podiums: number;
+  wins: number;
+  averageFinish: number;
+  dnfRate: number;
+  smallSample: boolean;
+};
+
 export type History = {
   window: string;
   basis: string;
@@ -90,6 +100,8 @@ export type History = {
   averagePositionsGained: number;
   dnfRate: Rate;
   positionRates: Array<{ position: number; winner: Rate; podium: Rate }>;
+  activeDrivers: EntityPerformance[];
+  teams: EntityPerformance[];
   warnings: string[];
 };
 

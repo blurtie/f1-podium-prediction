@@ -2,7 +2,23 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { postQualifying } from "@/lib/api";
+import { deltaDirection, podiumDelta } from "@/lib/analytics";
 import type { PredictionResponse, QualifyingRow } from "@/lib/types";
+
+const percentFormatter = new Intl.NumberFormat("id-ID", {
+  style: "percent",
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+
+function formatDelta(value: number) {
+  const normalized = Math.abs(value) < 0.05 ? 0 : value;
+  const sign = normalized > 0 ? "+" : normalized < 0 ? "−" : "±";
+  return `${sign}${Math.abs(normalized).toLocaleString("id-ID", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  })} pp`;
+}
 
 function seedRows(prediction: PredictionResponse): QualifyingRow[] {
   return prediction.field.map((driver, index) => ({
@@ -21,6 +37,10 @@ export function QualifyingWorkbench({ initialPrediction }: { initialPrediction: 
   const [result, setResult] = useState<PredictionResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+  const initialByDriver = useMemo(
+    () => new Map(initialPrediction.field.map((driver) => [driver.driverId, driver])),
+    [initialPrediction.field],
+  );
 
   const positionsValid = useMemo(() => {
     const expected = new Set(Array.from({ length: rows.length }, (_, index) => index + 1));
@@ -75,9 +95,22 @@ export function QualifyingWorkbench({ initialPrediction }: { initialPrediction: 
           <p className="eyebrow">POST-QUALIFYING OUTPUT</p>
           {result ? (
             <ol>
-              {result.predictedPodium.map((driver) => (
-                <li key={driver.driverId}><span>P{driver.position}</span><div><b>{driver.driverCode}</b><small>{driver.driverName}</small></div><strong>{(driver.probability * 100).toFixed(1)}%</strong></li>
-              ))}
+              {result.predictedPodium.map((driver) => {
+                const before = initialByDriver.get(driver.driverId)?.podiumProbability ?? 0;
+                const after = result.field.find((entry) => entry.driverId === driver.driverId)?.podiumProbability ?? 0;
+                const delta = podiumDelta(before, after);
+                const deltaClass = deltaDirection(delta);
+                return (
+                  <li key={driver.driverId} data-testid="post-qualifying-driver">
+                    <span>P{driver.position}</span>
+                    <div><b>{driver.driverCode}</b><small>{driver.driverName}</small></div>
+                    <div className="podium-change" aria-label={`Peluang podium ${driver.driverName}: sebelum ${percentFormatter.format(before)}, sesudah ${percentFormatter.format(after)}, perubahan ${formatDelta(delta)}`}>
+                      <strong>{percentFormatter.format(before)} → {percentFormatter.format(after)}</strong>
+                      <small className={`delta ${deltaClass}`}>{formatDelta(delta)}</small>
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
           ) : (
             <div className="empty-result"><span>44</span><p>Complete the timing sheet to recalculate the podium.</p></div>

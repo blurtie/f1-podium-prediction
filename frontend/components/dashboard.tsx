@@ -1,4 +1,11 @@
 import { Countdown } from "@/components/countdown";
+import {
+  FullFieldProbability,
+  HistoryMetrics,
+  SpaContenderFormbook,
+  TeamOutlook,
+  WeekendConditions,
+} from "@/components/dashboard-statistics";
 import { QualifyingWorkbench } from "@/components/qualifying-workbench";
 import { SpaTrack } from "@/components/spa-track";
 import type { History, Overview, PredictionResponse } from "@/lib/types";
@@ -71,6 +78,8 @@ export function Dashboard({
         </div>
       </section>
 
+      <WeekendConditions weather={overview.weather} />
+
       <section className="prediction-section" id="prediction">
         <div className="section-heading">
           <div>
@@ -104,32 +113,10 @@ export function Dashboard({
           </ol>
         </div>
 
-        <div className="field-table-wrap">
-          <div className="table-intro">
-            <h3>Full field probability</h3>
-            <span>{predictions.field.length} DRIVERS / SORTED BY PODIUM CHANCE</span>
-          </div>
-          <div className="field-table" role="table" aria-label="Probabilitas seluruh pembalap">
-            <div className="field-row field-header" role="row">
-              <span>DRIVER</span><span>TEAM</span><span>WIN</span><span>PODIUM</span><span>FORM SIGNAL</span>
-            </div>
-            {predictions.field.map((driver) => (
-              <div className="field-row" role="row" key={driver.driverId}>
-                <span className="driver-cell"><b>{driver.driverCode}</b>{driver.driverName}</span>
-                <span>{driver.team}</span>
-                <span>{percent(driver.winnerProbability)}</span>
-                <span className="probability-cell">
-                  <i style={{ width: percent(driver.podiumProbability) }} />
-                  <b>{percent(driver.podiumProbability)}</b>
-                </span>
-                <span className={driver.factors[0]?.direction === "inhibiting" ? "signal negative" : "signal"}>
-                  {driver.factors[0]?.label ?? "Form historis"}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <FullFieldProbability field={predictions.field} />
       </section>
+
+      <TeamOutlook field={predictions.field} />
 
       <section className="history-section" id="history">
         <div className="section-heading light">
@@ -139,28 +126,7 @@ export function Dashboard({
           </div>
           <p>{history.raceSampleSize} race editions, 2021 dikeluarkan secara default karena hanya dua lap di belakang safety car.</p>
         </div>
-        <div className="history-grid">
-          <article className="history-stat primary-stat">
-            <span>POLE TO WIN</span>
-            <strong>{percent(history.poleToWinner.rate)}</strong>
-            <p>{history.poleToWinner.successes} kemenangan dari {history.poleToWinner.sampleSize} pole sitter.</p>
-          </article>
-          <article className="history-stat">
-            <span>TOP 3 QUALI → PODIUM</span>
-            <strong>{percent(history.topThreeQualifyingToRaceTopThree.rate)}</strong>
-            <p>Overlap pembalap, tanpa menuntut urutan finis yang sama.</p>
-          </article>
-          <article className="history-stat">
-            <span>QUALI / FINISH CORRELATION</span>
-            <strong>{history.spearmanCorrelation?.toFixed(2) ?? "N/A"}</strong>
-            <p>Spearman deskriptif; bukan hubungan sebab-akibat.</p>
-          </article>
-          <article className="history-stat">
-            <span>DNF RATE</span>
-            <strong>{percent(history.dnfRate.rate)}</strong>
-            <p>Spa tetap menghukum kesalahan dan reliabilitas.</p>
-          </article>
-        </div>
+        <HistoryMetrics history={history} />
         <div className="position-chart">
           <div className="chart-heading"><h3>Starting position conversion</h3><span>WIN / PODIUM RATE</span></div>
           <div className="bars">
@@ -177,6 +143,8 @@ export function Dashboard({
           <div className="chart-legend"><span><i className="winner-key" /> WIN</span><span><i className="podium-key" /> PODIUM</span></div>
         </div>
       </section>
+
+      <SpaContenderFormbook field={predictions.field} history={history} />
 
       <QualifyingWorkbench initialPrediction={predictions} />
 
